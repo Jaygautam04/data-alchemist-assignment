@@ -23,11 +23,11 @@ It allows users to ingest data files (`.csv` / `.xlsx`), validate them based on 
 
 ### 🚧 Milestone 3 (Stretch Goals)
 
-* Not implemented yet: AI Rules, Natural Language to Rules, AI Validator (can be added in next phase)
+* Not implemented yet: AI Rules, Natural Language to Rules, AI Validator (will add later)
 
 ## 📸 Screenshots
 
-> *(Add screenshots or GIFs of upload, rule builder, table, and export buttons)*
+> [Upload](./public/screenshots/upload.png)
 
 ## 🛠 Tech Stack
 
