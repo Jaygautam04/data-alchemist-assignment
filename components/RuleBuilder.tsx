@@ -1,4 +1,4 @@
-// RuleBuilder.tsx
+
 import { useState } from "react";
 
 interface Rule {

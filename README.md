@@ -1,40 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# 🧪 Data Alchemist - CSV Rule Builder & Validator
 
-## Getting Started
+This project is part of the **Software Engineering Intern Assignment** for Digitalyz.
+It allows users to ingest data files (`.csv` / `.xlsx`), validate them based on custom rules, edit data inline, and export clean datasets.
 
-First, run the development server:
+## 🚀 Features
+
+### ✅ Milestone 1
+
+* 📁 Upload `.csv` and `.xlsx` files
+* 🧾 Dynamic column detection & mapping
+* ✅ Validation: ClientID uniqueness, Priority Level (1-5), JSON parsing
+* ✏️ Inline editing with real-time validation
+* 🔁 Undo / Redo editing support
+* 🔍 Global + column-wise filters
+
+### ✅ Milestone 2
+
+* 🧱 Custom Rule Builder UI (condition + message)
+* 🎚️ Priority level sliders
+* 🧠 Rule-based validation with instant feedback
+* 💾 Export options: Clean CSV, JSON, ZIP (multi-format)
+
+### 🚧 Milestone 3 (Stretch Goals)
+
+* Not implemented yet: AI Rules, Natural Language to Rules, AI Validator (can be added in next phase)
+
+## 📸 Screenshots
+
+> *(Add screenshots or GIFs of upload, rule builder, table, and export buttons)*
+
+## 🛠 Tech Stack
+
+* React + TypeScript
+* Tailwind CSS
+* PapaParse (.csv handling)
+* SheetJS/XLSX (.xlsx support)
+* React Data Table Component
+* JSZip (ZIP export)
+
+## 📦 Installation & Running Locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Navigate to `http://localhost:3000`
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## 🌐 Deployment
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+Live demo hosted on Vercel:
+[https://data-alchemist.vercel.app](https://data-alchemist.vercel.app)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+## 📁 Folder Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+/components
+  ├── FileUpload.tsx     # Main component with full UI
+  └── RuleBuilder.tsx     # Reusable rule input panel
+/pages
+  └── index.tsx          # Entry point
+/public                  # Static assets
+```
 
-## Learn More
+## 📤 Submission Info
 
-To learn more about Next.js, take a look at the following resources:
+* **GitHub Repo:** [https://github.com/jaygautam-dev/data-alchemist-assignment](https://github.com/jaygautam-dev/data-alchemist-assignment)
+* **Live Preview:** [https://data-alchemist.vercel.app](https://data-alchemist.vercel.app)
+* **Optional Loom Demo:** *(link here if recorded)*
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 💼 About Me
 
-## Deploy on Vercel
+👋 I'm Jay Gautam, 3rd-year CSE student passionate about full-stack development, clean UI/UX, and impactful tech. Let's build things that matter!
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+📫 [jaych7983@gmail.com](mailto:jaych7983@gmail.com) | [LinkedIn](https://linkedin.com/in/jaygautam) | [GitHub](https://github.com/jaygautam-dev)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+---
+
+*This project is submitted for the Digitalyz Software Engineering Internship Assignment.*

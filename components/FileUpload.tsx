@@ -11,7 +11,7 @@ import DataTable, {
   ConditionalStyles,
 } from "react-data-table-component";
 
-/* ---------- Types ---------- */
+
 interface BaseRow {
   [key: string]: any;
 }
@@ -277,12 +277,12 @@ export default function FileUpload() {
     },
   ];
 
-  /* ------------------ RENDER ------------------ */
+  
   return (
     <div className="bg-white p-6 rounded shadow w-full">
       <h2 className="text-xl font-bold mb-4">📂 Upload and Validate Data</h2>
 
-      {/* Dataset Selector */}
+      
       <select
         value={datasetType}
         onChange={(e) => setDatasetType(e.target.value as any)}
@@ -294,7 +294,6 @@ export default function FileUpload() {
         <option value="workers">Workers</option>
       </select>
 
-      {/* File Upload */}
       <input
         type="file"
         accept=".csv, .xlsx"
@@ -310,10 +309,10 @@ export default function FileUpload() {
         </div>
       )}
 
-      {/* MAIN UI after headers */}
+      
       {headers.length > 0 && !loading && (
         <>
-          {/* Mapping */}
+          
           <div className="mb-6 border rounded p-4 bg-gray-50">
             <h3 className="font-semibold mb-3">🗺️ Map incoming columns</h3>
             {EXPECTED_FIELDS.map((f) => (
@@ -334,13 +333,13 @@ export default function FileUpload() {
             ))}
           </div>
 
-          {/* Rule Builder */}
+         
           <RuleBuilder
             headers={headers}
             onAddRule={(rule) => setCustomRules((prev) => [...prev, rule])}
           />
 
-          {/* Action Buttons */}
+       
           <div className="flex flex-wrap gap-3 mb-4">
             <button
               onClick={handleUndo}
@@ -398,7 +397,7 @@ export default function FileUpload() {
             </button>
           </div>
 
-          {/* Filters */}
+         
           <div className="flex flex-wrap gap-4 items-center mb-4">
             <input
               type="text"
@@ -435,7 +434,7 @@ export default function FileUpload() {
             </label>
           </div>
 
-          {/* Column filters */}
+        
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mb-4">
             {headers.map((header) => (
               <input
@@ -449,7 +448,7 @@ export default function FileUpload() {
             ))}
           </div>
 
-          {/* DataTable */}
+       
           <DataTable
             title="Validated Data"
             columns={columns}
